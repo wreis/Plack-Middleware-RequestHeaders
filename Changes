@@ -1,0 +1,4 @@
+Revision history for Perl extension Plack::Middleware::RequestHeaders
+
+0.01 2012-01-14
+    - Initial release

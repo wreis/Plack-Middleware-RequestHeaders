@@ -1,0 +1,17 @@
+NAME
+    Plack::Middleware::RequestHeaders - modify HTTP request headers
+
+SYNOPSIS
+        enable 'RequestHeaders',
+            set => ['Accept-Encoding' => 'identity'],
+            unset => ['Authorization'];
+
+AUTHOR
+    Wallace Reis "<wreis@cpan.org>"
+
+    Initial development sponsored by 123people Internetservices GmbH -
+    http://www.123people.com/
+
+SEE ALSO
+    Plack::Middleware::Header, Plack::Middleware, Plack::Builder
+
