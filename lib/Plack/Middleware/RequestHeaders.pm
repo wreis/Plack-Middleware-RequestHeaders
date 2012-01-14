@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Plack::Util ();
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use parent 'Plack::Middleware';
 
@@ -48,7 +48,7 @@ Plack::Middleware::RequestHeaders - modify HTTP request headers
 
 Wallace Reis C<< <wreis@cpan.org> >>
 
-Initial development sponsored by 123people Internetservices GmbH - http://www.123people.com/
+Initial development sponsored by 123people Internetservices GmbH - L<http://www.123people.com/>
 
 =head1 SEE ALSO
 
