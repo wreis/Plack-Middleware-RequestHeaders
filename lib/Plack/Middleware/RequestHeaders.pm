@@ -4,12 +4,11 @@ package Plack::Middleware::RequestHeaders;
 use strict;
 use warnings;
 use Plack::Util ();
+use Plack::Util::Accessor qw/set unset/;
 
 our $VERSION = '0.02';
 
 use parent 'Plack::Middleware';
-
-__PACKAGE__->mk_accessors(qw/set unset/);
 
 sub build_req_header_key {
   my ( $self, $key ) = @_;
