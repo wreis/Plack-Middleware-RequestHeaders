@@ -1,4 +1,5 @@
 package Plack::Middleware::RequestHeaders;
+# ABSTRACT: modify HTTP request headers
 
 use strict;
 use warnings;
@@ -34,19 +35,18 @@ sub call {
 
 __END__
 
-=head1 NAME
-
-Plack::Middleware::RequestHeaders - modify HTTP request headers
-
 =head1 SYNOPSIS
 
     enable 'RequestHeaders',
         set => ['Accept-Encoding' => 'identity'],
         unset => ['Authorization'];
 
-=head1 AUTHOR
+=head1 DESCRIPTION
 
-Wallace Reis C<< <wreis@cpan.org> >>
+This middleware allows the modification of HTTP request headers. For instance,
+util for use with L<Plack::App::Proxy>.
+
+=head1 ACKNOWLEDGMENT
 
 Initial development sponsored by 123people Internetservices GmbH - L<http://www.123people.com/>
 
