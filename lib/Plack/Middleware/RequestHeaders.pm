@@ -6,7 +6,7 @@ use warnings;
 use Plack::Util ();
 use Plack::Util::Accessor qw/set unset/;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use parent 'Plack::Middleware';
 
