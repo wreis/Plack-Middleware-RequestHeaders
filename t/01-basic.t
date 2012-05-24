@@ -6,7 +6,11 @@ use Plack::Util ();
 
 my @tests = (
   {
-    set => ['Accept-Encoding' => 'identity'],
+    set => [
+      'Accept-Encoding' => 'identity',
+      'Content-Type' => 'text/html',
+      'Content-Length' => '2',
+    ],
     unset => ['User-Agent'],
     env => {
       HTTP_USER_AGENT => 'testbot',
@@ -26,6 +30,8 @@ foreach my $test (@tests) {
         my $env = shift;
         ok(exists $env->{'HTTP_ACCEPT_ENCODING'});
 	ok(!(exists $env->{'HTTP_USER_AGENT'}));
+        is($env->{'CONTENT_TYPE'}, 'text/html');
+        ok($env->{'CONTENT_LENGTH'} == 2);
         return $app->($env);
       };
     };

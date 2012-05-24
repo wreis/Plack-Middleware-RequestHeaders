@@ -12,7 +12,8 @@ use parent 'Plack::Middleware';
 
 sub build_req_header_key {
   my ( $self, $key ) = @_;
-  return join(q{_}, q{HTTP}, split(/\-/, uc $key));
+  my $hname = join(q{_}, split(/\-/, uc $key));
+  return $hname =~ m{CONTENT\_(LENGTH|TYPE)} ? $hname : q{HTTP_} . $hname;
 }
 
 sub call {
