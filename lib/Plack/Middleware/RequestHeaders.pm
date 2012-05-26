@@ -6,8 +6,6 @@ use warnings;
 use Plack::Util ();
 use Plack::Util::Accessor qw/set unset/;
 
-our $VERSION = '0.03';
-
 use parent 'Plack::Middleware';
 
 sub build_req_header_key {
