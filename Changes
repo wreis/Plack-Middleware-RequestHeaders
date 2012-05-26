@@ -1,6 +1,6 @@
 Revision history for Perl extension Plack::Middleware::RequestHeaders
 
-{{$NEXT}}
+0.03      2012-05-26 17:08:06 Europe/Vienna
     - Fix build_req_header_key method
       CONTENT_(LENGTH|TYPE) are exceptions for the HTTP header keys
     - Create accessors using Plack::Util::Accessor
