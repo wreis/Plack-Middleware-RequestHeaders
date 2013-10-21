@@ -1,6 +1,8 @@
 package Plack::Middleware::RequestHeaders;
 # ABSTRACT: modify HTTP request headers
 
+# VERSION
+
 use strict;
 use warnings;
 use Plack::Util ();
