@@ -1,0 +1,40 @@
+=pod
+
+=head1 NAME
+
+Plack::Middleware::RequestHeaders - modify HTTP request headers
+
+=head1 VERSION
+
+version 0.04
+
+=head1 SYNOPSIS
+
+    enable 'RequestHeaders',
+        set => ['Accept-Encoding' => 'identity'],
+        unset => ['Authorization'];
+
+=head1 DESCRIPTION
+
+This middleware allows the modification of HTTP request headers. For instance,
+util for use with L<Plack::App::Proxy>.
+
+=head1 ACKNOWLEDGMENT
+
+Initial development sponsored by 123people Internetservices GmbH - L<http://www.123people.com/>
+
+=head1 SEE ALSO
+
+L<Plack::Middleware::Header>, L<Plack::Middleware>,  L<Plack::Builder>
+
+=head1 AUTHOR
+
+Wallace Reis <wreis@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Wallace Reis.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
