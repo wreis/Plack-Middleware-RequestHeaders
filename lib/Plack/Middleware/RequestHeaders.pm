@@ -52,6 +52,6 @@ Initial development sponsored by 123people Internetservices GmbH - L<http://www.
 
 =head1 SEE ALSO
 
-L<Plack::Middleware::Header>, L<Plack::Middleware>,  L<Plack::Builder>
+L<Plack::Middleware::Headers>, L<Plack::Middleware>,  L<Plack::Builder>
 
 =cut
