@@ -1,6 +1,8 @@
 Revision history for Perl extension Plack::Middleware::RequestHeaders
 
 {{$NEXT}}
+    - Update POD
+    - Update dzil setup
 
 0.04      2013-10-21
     - Update dzil setup
