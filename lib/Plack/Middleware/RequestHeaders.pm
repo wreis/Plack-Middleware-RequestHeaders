@@ -46,10 +46,6 @@ __END__
 This middleware allows the modification of HTTP request headers. For instance,
 util for use with L<Plack::App::Proxy>.
 
-=head1 ACKNOWLEDGMENT
-
-Initial development sponsored by 123people Internetservices GmbH - L<http://www.123people.com/>
-
 =head1 SEE ALSO
 
 L<Plack::Middleware::Headers>, L<Plack::Middleware>,  L<Plack::Builder>
