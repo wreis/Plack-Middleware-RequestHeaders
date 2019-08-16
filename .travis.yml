@@ -14,4 +14,4 @@ install:
    - cpanm --quiet --notest --installdeps .
 
 script:
-   - perl Makefile.PL && make && cover -test -report coveralls Coveralls
+   - cover -test -report coveralls Coveralls
