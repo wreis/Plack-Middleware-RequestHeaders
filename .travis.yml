@@ -8,9 +8,10 @@ perl:
 
 before_install:
    - export HARNESS_OPTIONS=j10:c HARNESS_TIMER=1
+   - cpanm -n Devel::Cover::Report::Coveralls
 
 install:
    - cpanm --quiet --notest --installdeps .
 
 script:
-   - prove -lr t
+   - perl Makefile.PL && make && cover -test -report coveralls Coveralls
