@@ -1,12 +1,13 @@
 package Plack::Middleware::RequestHeaders;
 # ABSTRACT: modify HTTP request headers
 
-# VERSION
-
 use strict;
 use warnings;
 use Plack::Util ();
 use Plack::Util::Accessor qw/set unset/;
+
+our $VERSION = '0.05';
+$VERSION = eval $VERSION;
 
 use parent 'Plack::Middleware';
 
